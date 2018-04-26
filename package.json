@@ -1,0 +1,17 @@
+{
+  "name": "ziey-i18n2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "i18n.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin" : {
+      "ziey-i18n-parse" : "./parse.js"
+  },
+  "dependencies": {
+    "esprima": "^4.0.0"
+  }
+}

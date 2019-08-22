@@ -5,6 +5,7 @@
         "packages/*"
     ],
     "scripts": {
+        "init": "lerna bootstrap",
         "test": "lerna run test"
     },
     "devDependencies": {

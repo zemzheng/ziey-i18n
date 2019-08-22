@@ -1,0 +1,52 @@
+{
+  "name": "ziey-i18n-loader",
+  "version": "0.6.1",
+  "description": "Loader for i18n in webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zemzheng/ziey-i18n-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "ziey",
+    "i18n"
+  ],
+  "author": "Zem Zheng (zemzheng@gmail.com)",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/zemzheng/ziey-i18n-loader/issues"
+  },
+  "homepage": "https://github.com/zemzheng/ziey-i18n-loader",
+  "dependencies": {
+    "loader-utils": "^0.2.11",
+    "ziey-gettext": "^0.7.1",
+    "ziey-utils": "^0.5.4"
+  },
+  "_shasum": "9ca60be4c76e8c88e6311f9ac61fff660de6c4b3",
+  "_from": "ziey-i18n-loader@>=0.5.0 <0.6.0",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.6",
+    "mocha": "^6.1.4",
+    "should": "^13.2.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm test"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "./**/*.js": "eslint --fix"
+    }
+  }
+}

@@ -1,17 +1,35 @@
 {
-  "name": "ziey-i18n2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "i18n.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "bin" : {
-      "ziey-i18n-parse" : "./parse.js"
-  },
-  "dependencies": {
-    "esprima": "^4.0.0"
-  }
+    "name": "root",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "test": "lerna run test"
+    },
+    "devDependencies": {
+        "@commitlint/config-conventional": "^8.1.0",
+        "cz-conventional-changelog": "^3.0.2",
+        "eslint-plugin-prettier": "^3.1.0",
+        "husky": "^3.0.4",
+        "lerna": "^3.16.4",
+        "lint-staged": "^9.2.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "commit-msg": "npx commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    },
+    "lint-staged": {
+        "packages/**/*.js": [
+            "npx eslint --fix",
+            "git add"
+        ]
+    }
 }

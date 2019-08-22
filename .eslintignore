@@ -1,0 +1,3 @@
+**/test/*.js
+**/__test__/*.js
+dist

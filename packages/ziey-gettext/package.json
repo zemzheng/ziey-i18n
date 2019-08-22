@@ -1,0 +1,30 @@
+{
+  "name": "ziey-gettext",
+  "version": "0.7.1",
+  "description": "gettext in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zemzheng/ziey-gettext.git"
+  },
+  "keywords": [
+    "gnu",
+    "gettext"
+  ],
+  "author": "Zem Zheng (zemzheng@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zemzheng/ziey-gettext/issues"
+  },
+  "homepage": "https://github.com/zemzheng/ziey-gettext",
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "should": "^7.0.2"
+  },
+  "dependencies": {
+    "ziey-utils": "^0.5.4"
+  }
+}

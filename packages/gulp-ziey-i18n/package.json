@@ -1,0 +1,41 @@
+{
+    "name": "gulp-ziey-i18n",
+    "version": "1.1.2",
+    "description": "gulp i18n tool by zem",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "keywords": [
+        "gulp",
+        "ziey",
+        "i18n"
+    ],
+    "author": {
+        "name": "zemzheng@gmail.com"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "mocha": "^2.3.3",
+        "should": "^7.0.2"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {
+        "ansi-colors": "^3.2.4",
+        "fancy-log": "^1.3.3",
+        "plugin-error": "^1.0.1",
+        "vinyl": "^2.2.0",
+        "ziey-gettext": "^0.7.1",
+        "ziey-utils": "^0.5.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zemzheng/ziey-i18n.git"
+    },
+    "bugs": {
+        "url": "https://github.com/zemzheng/ziey-i18n/issues"
+    },
+    "readmeFilename": "readme"
+}

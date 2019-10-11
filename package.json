@@ -6,7 +6,8 @@
     ],
     "scripts": {
         "init": "lerna bootstrap --no-ci",
-        "test": "lerna run test"
+        "test": "lerna run test",
+        "publish": "lerna publish"
     },
     "devDependencies": {
         "@commitlint/config-conventional": "^8.1.0",

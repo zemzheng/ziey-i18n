@@ -4,7 +4,7 @@
         "email": "zemzheng@gmail.com"
     },
     "name": "grunt-ziey-i18n",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "i18n template tools for grunt",
     "repository": {
         "type": "git",
@@ -20,7 +20,7 @@
     ],
     "dependencies": {
         "art-template": "~2.0.3-rc5",
-        "ziey-utils": "^0.5.4"
+        "ziey-utils": "^0.5.5"
     },
     "readmeFilename": "readme.md"
 }

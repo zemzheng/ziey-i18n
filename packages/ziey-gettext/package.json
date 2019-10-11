@@ -1,6 +1,6 @@
 {
   "name": "ziey-gettext",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "gettext in javascript",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "should": "^7.0.2"
   },
   "dependencies": {
-    "ziey-utils": "^0.5.4"
+    "ziey-utils": "^0.5.5"
   },
   "readmeFilename": "readme"
 }

@@ -91,7 +91,7 @@ module.exports = function (content) {
 };
 
 
-module.exports.output = function (format_po) {
+function output (format_po) {
     format_po = format_po == 'po' ? true : false;
     var p, lang, obj, result = { path: {}, lang: {} };
     for (lang in gettext_recored.lang) {
@@ -104,10 +104,14 @@ module.exports.output = function (format_po) {
     }
     return result;
 };
-module.exports.save = function () {
-    var files = module.exports.output('po').path;
+
+function save () {
+    var files = output('po').path;
     var f;
     for (f in files) {
         fs.writeFileSync(f, files[ f ]);
     }
 };
+
+module.exports.output = output;
+module.exports.save = save;

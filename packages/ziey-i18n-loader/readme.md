@@ -13,17 +13,20 @@ webpack i18n loader
 ## Usage
 
 ```
-    # config in webpack
-    {
-        test   : /\.(js|html)$/i,
-        loader : "ziey-i18n?lang=<lang>&path=<path_to_po>&clean=0&openTag=<<&closeTag=}}",
+const ZieyI18nLoaderPlugin = require('ziey-i18n-loader/plugin');
+module.exports = {
+    plugins: [
+        new ZieyI18nLoaderPlugin() # 加上这个插件
+    ],
+    module: {
+        rules: [
+            { # 配置要翻译的文本和参数
+                test   : /\.(js|html)$/i,
+                loader : "ziey-i18n?lang=<lang>&path=<path_to_po>&clean=0&openTag=<<&closeTag=}}",
+            }
+        ]
     }
-
-
-    # Save to po file
-    webpack({ /* ... config ... */ });
-    // ... done 完成后
-    require( 'ziey-i18n-loader' ).save() // save to the path above
+}
 ```
 
 ## params

@@ -148,7 +148,7 @@ module.exports = function (options) {
                         base: b,
                         path: p,
                         contents: Buffer.from(poTxt)
-                    }),
+                    })
                 );
             }
         }
